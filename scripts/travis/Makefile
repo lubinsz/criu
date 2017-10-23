@@ -1,4 +1,4 @@
-local:
+aarch64:
 	./travis-tests
 .PHONY: local
 
