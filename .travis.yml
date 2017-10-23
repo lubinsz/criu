@@ -11,6 +11,7 @@ matrix:
     - env: TR_ARCH=docker-test
     - env: TR_ARCH=fedora-rawhide
 script:
+  - uname -a
   - sudo make CCACHE=1 -C scripts/travis $TR_ARCH
 after_success:
   - ccache -s
